@@ -1,0 +1,232 @@
+/* VISTA DESKTOP */
+@media screen and (min-width:768px) {
+body{
+    background-color: rgba(78, 78, 78, 0.192);
+}
+.gridIndex{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto auto auto;
+}
+header{grid-area: header; display: flex;}
+main{grid-area: main; display: flex;}
+footer{grid-area: footer; display: flex; justify-content: center}
+.gridMain{
+    display: grid;
+    grid-template-areas:
+    "contenidoPrincipal__parrafo contenidoPrincipal__parrafo"
+    "parrafoHolaMundo parrafoHolaMundo"
+    "imgPrincipal textoPrincipal";
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3, auto);
+}
+.contenidoPrincipal__parrafo{grid-area: contenidoPrincipal__parrafo;}
+.parrafoHolaMundo{grid-area: parrafoHolaMundo;}
+.imgPrincipal{grid-area: imgPrincipal;width: 100%;}
+.textoPrincipal{grid-area: textoPrincipal; display: flex; align-items: center; text-align: center;}
+.gridMain2{
+    display: grid;
+    grid-template-areas:
+    "formulario formulario"
+    "logoSpurs2 logoSpurs2";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+}
+.formulario{grid-area: formulario; display: flex; flex-direction: column; justify-content:left; align-items: center;}
+.logoSpurs2{grid-area: logoSpurs2;display: block; margin-left: auto; margin-right: auto; width: 30%;padding: 5%;}
+
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.encabezado__logo{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+.margin{
+    margin: 50px;
+}
+.contenidoPrincipal__parrafo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(128, 128, 128, 0.055);
+    padding: 50px;
+    margin: 20px;
+}
+.textoPrincipal{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li{
+    display: inline-block;
+    padding: 45px;
+}
+.relative{
+    position: relative;
+    text-align: center;
+}
+a:link{
+    text-decoration: none
+}
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.formularioPrincipal{
+    height: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 60px;
+}
+ .content-foo{
+    text-align: center;
+ }
+ 
+ .content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #ff000088;
+    padding-bottom: 5px;
+    margin-bottom: -12px;
+ }
+ 
+ .content-foo p{
+    color: #ccc;
+ }
+ 
+ .titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: -30px 0 0 0;
+    color: #9e9797;
+ }
+footer{
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgba(48, 48, 48, 0.623);
+}
+}
+
+/* VISTA MOBILE */
+@media screen and (max-width:768px) {
+    body{
+        background-color: rgba(78, 78, 78, 0.404);
+    }
+    .gridIndex{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: auto auto auto;
+    }
+    header{grid-area: header; display: flex;}
+    main{grid-area: main; display: flex;}
+    footer{grid-area: footer; display: flex; justify-content: center}
+    .gridMain{
+        display: grid;
+        grid-template-areas:
+        "contenidoPrincipal__parrafo contenidoPrincipal__parrafo"
+        "parrafoHolaMundo parrafoHolaMundo"
+        "imgPrincipal textoPrincipal";
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(3, auto);
+    }
+    .contenidoPrincipal__parrafo{grid-area: contenidoPrincipal__parrafo;}
+    .parrafoHolaMundo{grid-area: parrafoHolaMundo;}
+    .imgPrincipal{grid-area: imgPrincipal;width: 100%;}
+    .textoPrincipal{grid-area: textoPrincipal; display: flex; align-items: center;}
+    .gridMain2{
+        display: grid;
+        grid-template-areas:
+        "formulario formulario"
+        "logoSpurs2 logoSpurs2";
+    }
+    .formulario{grid-area: formulario; display: flex; flex-direction: column; justify-content:left; align-items: center;}
+    .logoSpurs2{grid-area: logoSpurs2;display: block; margin-left: auto; margin-right: auto;width: 30%;}    
+    .encabezado{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .encabezado__logo{
+        display: flex;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 35px;
+    }
+    .margin{
+        margin: 20px;
+    }
+    .contenidoPrincipal__parrafo{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgba(128, 128, 128, 0.055);
+        padding: 50px;
+        margin: 20px;
+    }
+    .textoPrincipal{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: relative;
+        text-align: center;
+    }
+    li{
+        display: inline-block;
+        padding: 45px;
+    }
+    .relative{
+        position: relative;
+        text-align: center;
+    }
+    a:link{
+        text-decoration: none
+    }
+    a{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: black;
+    }
+    .formulario{
+        height: 20%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+     .content-foo{
+        text-align: center;
+     }
+     
+     .content-foo h4{
+        color: #fff;
+        border-bottom: 3px solid #ff000088;
+        padding-bottom: 5px;
+        margin-bottom: -12px;
+     }
+     
+     .content-foo p{
+        color: #ccc;
+     }
+     
+     .titulo-final{
+        text-align: center;
+        font-size: 24px;
+        margin: -30px 0 0 0;
+        color: #9e9797;
+     }
+    footer{
+        flex-direction: column;
+        padding: 40px;
+        background-color: rgba(48, 48, 48, 0.623);
+    }
+}
